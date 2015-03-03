@@ -1,8 +1,8 @@
 __author__ = '0720046'
 
 from tkinter import *
-from dialogTable import demos # button callback handlers
-from quitter import Quitter # attach a quit object to me
+from userinterface.temp.dialogTable import demos # button callback handlers
+from userinterface.temp.quitter import Quitter # attach a quit object to me
 
 
 # class Demo(Frame):
@@ -18,8 +18,8 @@ class Demo(Frame):
     def __init__(self, parent=None, **options):
         Frame.__init__(self, parent, **options)
         self.pack()
-        Label(self, text="집계기준").pack()
-        for (k) in ['평균','중앙','최대','최소','최초','최후']:
+        Label(self, text="분석 알고리즘").pack()
+        for (k) in ['OLS','NN','SVM','GTB','ANN']:
             Checkbutton(self, text=k).pack(side=TOP, fill=BOTH)
 
 

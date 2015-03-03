@@ -43,7 +43,7 @@ if __name__ == '__main__':
     def allstates():
         print(Agg.state(), Freq.state(), Algo.state())
 
-from quitter import Quitter
+from userinterface.temp.quitter import Quitter
 root.title('BOK Nowcasting')
 Quitter(root).pack(side=RIGHT)
 Button(root, text='Peek', command=allstates).pack(side=RIGHT)

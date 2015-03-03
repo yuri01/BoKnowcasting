@@ -1,8 +1,8 @@
 __author__ = '0720046'
 
 from tkinter import * # get base widget set
-from dialogTable import demos # button callback handlers
-from quitter import Quitter # attach a quit object to "me"
+from userinterface.temp.dialogTable import demos # button callback handlers
+from userinterface.temp.quitter import Quitter # attach a quit object to "me"
 
 class Demo(Frame):
 	def __init__(self, parent=None, **options):

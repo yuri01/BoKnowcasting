@@ -2,8 +2,8 @@ __author__ = '0720046'
 
 "create two linked scales used to launch dialog demos"
 from tkinter import * # get base widget set
-from dialogTable import demos # button callback handlers
-from quitter import Quitter # attach a quit frame to me
+from userinterface.temp.dialogTable import demos # button callback handlers
+from userinterface.temp.quitter import Quitter # attach a quit frame to me
 
 class Demo(Frame):
 	def __init__(self, parent=None, **options):

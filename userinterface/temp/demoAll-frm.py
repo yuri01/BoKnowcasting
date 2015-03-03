@@ -1,9 +1,8 @@
 __author__ = '0720046'
 
 from tkinter import *
-from quitter import Quitter
-
-demoModules = ['demoDlg', 'demoDlg1', 'demoDlg2', 'demoScale', 'demoScale1']
+from userinterface.temp.quitter import Quitter
+demoModules = ['demoDlg', 'demoCheck', 'demoRadio', 'demoScale','buttonbars']
 parts = []
 
 def addComponents(root):
@@ -23,9 +22,9 @@ def dumpState():
             print('none')
 
 root = Tk() # make explicit root first
-root.title('BOK GDP Nowcasting')
-Label(root, text='Input 조건 설정', bg='white').pack()
-addComponents(root)
-Button(root, text='조건입력', command=dumpState).pack(fill=X)
+root.title('Frames')
+Label(root, text='Multiple Frame demo', bg='white').pack()
+Button(root, text='States', command=dumpState).pack(fill=X)
 Quitter(root).pack(fill=X)
+addComponents(root)
 root.mainloop()

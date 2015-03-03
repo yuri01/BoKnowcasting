@@ -14,8 +14,8 @@ os.chdir("/Users/yuri/Documents/python/Nowcasting")
 
 
 from tkinter import *
-from dialogTable import demos 
-from quitter import Quitter
+from userinterface.temp.dialogTable import demos
+from userinterface.temp.quitter import Quitter
 # get base widget set
 # get canned dialogs
 # attach a quitter object to "me"
