@@ -1,4 +1,4 @@
 __author__ = 'byeungchun'
 
-print('hello')
+print('브랜치 생성 tkinterTraining')
 
