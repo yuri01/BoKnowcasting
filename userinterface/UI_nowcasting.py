@@ -3,12 +3,17 @@ __author__ = '병천'
 import sys
 from PySide import QtGui, QtCore
 
+from userinterface.ui_tabinfo import UI_tabInfo
+
 class UiNowcasting(QtGui.QDialog):
 
     def __init__(self):
         super(UiNowcasting,self).__init__()
 
+        self.tabs = UI_tabInfo()
+
         self.setFixedWidth(700)
+        self.setFixedHeight(900)
         self.createMenu()
         self.createGridLayoutTop()
 
@@ -46,6 +51,7 @@ class UiNowcasting(QtGui.QDialog):
         self.lOutTop.addWidget(self.createRlUpGBox(),6,0,8,1)
         self.lOutTop.addWidget(self.createAglmGBox(),6,1,8,2)
         self.lOutTop.addWidget(self.createTrSlrGBox(),7,3,7,2)
+        self.lOutTop.addWidget(self.tabs.tabInfo,14,0,10,5)
 
 
 
@@ -123,7 +129,6 @@ class UiNowcasting(QtGui.QDialog):
         _layout.addWidget(self.sldrTrrPeriod)
         TrrSliderGBox.setLayout(_layout)
         return TrrSliderGBox
-
 
 if __name__ == '__main__':
     app = QtGui.QApplication(sys.argv)
