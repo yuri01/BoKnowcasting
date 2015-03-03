@@ -3,7 +3,7 @@ __author__ = '병천'
 import sys
 from PySide import QtGui, QtCore
 
-from userinterface.ui_tabinfo import UI_tabInfo
+from userinterface.ui_tabinfos import UI_tabInfo
 
 class UiNowcasting(QtGui.QDialog):
 
