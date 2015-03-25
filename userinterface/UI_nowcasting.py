@@ -8,6 +8,7 @@ from userinterface.ui_tabinfos import UI_tabInfo
 class UiNowcasting(QtGui.QDialog):
 
     def __init__(self):
+        #주석 
         super(UiNowcasting,self).__init__()
 
         self.tabs = UI_tabInfo()
